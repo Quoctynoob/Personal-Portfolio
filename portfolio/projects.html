@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="../src/output.css" rel="stylesheet">
+		<script>
+			(function() {
+				const currentTheme = localStorage.getItem('theme');
+				if (currentTheme) {
+					document.documentElement.classList.add(currentTheme);
+				}
+			})();
+		</script>
+	</head>
+
+	<body class="transition-colors duration-500 bg-mintCream dark:bg-darkMint text-darkMint dark:text-mintCream">
+		<div class="bg-mintCream dark:bg-darkMint p-4 transition-colors duration-500">
+			<div class="container mx-auto flex justify-between items-center">
+				<nav class="flex">
+					<a href="index.html" class="text-darkMint dark:text-mintCream px-4 py-2 f">Quoc Le</a>
+					<a href="about.html" class="text-darkMint dark:text-mintCream px-4 py-2">About</a>
+					<a href="projects.html" class="text-darkMint dark:text-mintCream px-4 py-2">Projects</a>
+					<a href="contact.html" class="text-darkMint dark:text-mintCream px-4 py-2">Contact</a>
+				</nav>
+				<div class="flex items-center">
+					<a href="https://www.linkedin.com/in/quoc-van-tilburg-le-293333294/" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+					<a href="https://github.com/Quoctynoob" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+					<a href="https://www.instagram.com/tilburgquoc/" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+					<a href="mailto:tilburgquoc34@gmail.com" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="at-outline"></ion-icon>
+					</a>
+					<button id="theme-toggle" class="text-darkMint dark:text-mintCream px-3 py-2">
+						<span id="light-mode-icon" class="hidden">
+							<ion-icon name="sunny-outline"></ion-icon>
+						</span>
+						<span id="dark-mode-icon">
+							<ion-icon name="moon-outline"></ion-icon>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+        <!--<div class="ml-56 mr-56">
+    <div class="flex flex-wrap place-items-center h-screen">
+        
+        <div class="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+            <a href="#" class="w-full block h-full">
+                <img alt="blog photo" src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="max-h-40 w-full object-cover"/>
+                <div class="bg-white w-full p-4">
+                    <p class="text-indigo-500 text-2xl font-medium">
+                        Should You Get Online Education?
+                    </p>
+                    <p class="text-gray-800 text-sm font-medium mb-2">
+                        A comprehensive guide about online education.
+                    </p>
+                    <p class="text-gray-600 font-light text-md">
+                        It is difficult to believe that we have become so used to having instant access to information at...
+                        <a class="inline-flex text-indigo-500" href="#">Read More</a>
+                    </p>
+                    <div class="flex flex-wrap justify-starts items-center py-3 border-b-2 text-xs text-white font-medium">
+                        <span class="m-1 px-2 py-1 rounded bg-indigo-500">
+                            #online
+                        </span>
+                        <span class="m-1 px-2 py-1 rounded bg-indigo-500">
+                            #internet
+                        </span>
+                        <span class="m-1 px-2 py-1 rounded bg-indigo-500">
+                            #education
+                        </span>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'>
+            
+                        <div class="pl-3">
+                            <div class="font-medium">
+                                Jean Marc
+                            </div>
+                            <div class="text-gray-600 text-sm">
+                                CTO of Supercars
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>-->
+
+		<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>   
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<script src="./js/main.js"></script>
+		<script>
+			document.addEventListener('alpine:init', () => {
+				Alpine.data('skillDisplay', () => ({
+					skills: [{
+							'title': 'HTML + CSS',
+							'percent': '75',
+						},
+						{
+							'title': 'Java',
+							'percent': '75',
+						},
+						{
+							'title': 'Python',
+							'percent': '75',
+						},
+						{
+							'title': 'JavaScript',
+							'percent': '70',
+						},
+						{
+							'title': 'SQL',
+							'percent': '80',
+						}, {
+							'title': 'C',
+							'percent': '65',
+						},
+					],
+					currentSkill: {
+						'title': 'HTML + CSS',
+						'percent': '75',
+					}
+				}));
+			});
+		</script>
+		<script>
+			function calculateAge() {
+				const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
+				const birthTime = new Date('2004-12-07T00:00:00');
+				const ageElement = document.getElementById('age');
+				
+				function updateAge() {
+					const age = ((Date.now() - birthTime) / divisor).toFixed(11);
+					ageElement.textContent = age;
+				}
+	
+				setInterval(updateAge, 25); // Update age every 25 ms
+			}
+	
+			// Wait for the DOM to fully load before running the script
+			document.addEventListener('DOMContentLoaded', calculateAge);
+		</script>
+	</body>
+</html>

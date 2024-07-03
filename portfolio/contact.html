@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="../src/output.css" rel="stylesheet">
+		<script>
+			(function() {
+				const currentTheme = localStorage.getItem('theme');
+				if (currentTheme) {
+					document.documentElement.classList.add(currentTheme);
+				}
+			})();
+		</script>
+	</head>
+
+	<body class="transition-colors duration-500 bg-mintCream dark:bg-darkMint text-darkMint dark:text-mintCream">
+		<div class="bg-mintCream dark:bg-darkMint p-4 transition-colors duration-500">
+			<div class="container mx-auto flex justify-between items-center">
+				<nav class="flex">
+					<a href="index.html" class="text-darkMint dark:text-mintCream px-4 py-2 f">Quoc Le</a>
+					<a href="about.html" class="text-darkMint dark:text-mintCream px-4 py-2">About</a>
+					<a href="projects.html" class="text-darkMint dark:text-mintCream px-4 py-2">Projects</a>
+					<a href="contact.html" class="text-darkMint dark:text-mintCream px-4 py-2">Contact</a>
+				</nav>
+				<div class="flex items-center">
+					<a href="https://www.linkedin.com/in/quoc-van-tilburg-le-293333294/" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+					<a href="https://github.com/Quoctynoob" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+					<a href="https://www.instagram.com/tilburgquoc/" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+					<a href="mailto:tilburgquoc34@gmail.com" class="text-darkMint dark:text-mintCream px-4 py-2">
+						<ion-icon name="at-outline"></ion-icon>
+					</a>
+					<button id="theme-toggle" class="text-darkMint dark:text-mintCream px-3 py-2">
+						<span id="light-mode-icon" class="hidden">
+							<ion-icon name="sunny-outline"></ion-icon>
+						</span>
+						<span id="dark-mode-icon">
+							<ion-icon name="moon-outline"></ion-icon>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="ml-56 mr-56">
+			<div class=" transition-colors duration-500 grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-boxLight dark:bg-boxDark text-mintCream">
+				<div class="flex flex-col justify-between">
+					<div class="space-y-2">
+						<h2 class="text-4xl font-bold leading-tight lg:text-5xl text-darkMint dark:text-mintCream">Get In Touch</h2>
+						<div class="text-darkMint dark:text-mintCream">Contact me through social media or email.</div>
+						<a href="https://github.com/Quoctynoob" class="flex items-center text-darkMint dark:text-mintCream hover:text-mintCream hover:bg-accent rounded p-2">
+							<ion-icon fill="currentColor" class="w-6 h-6 m-2" viewBox="0 0 24 24" name="logo-github"></ion-icon>
+							Github
+						</a>
+						<a href="https://www.linkedin.com/in/quoc-van-tilburg-le-293333294/" class="flex items-center text-darkMint dark:text-mintCream hover:text-darkMint hover:bg-accent border-accent rounded p-2">
+							<ion-icon fill="currentColor" class="w-6 h-6 m-2" viewBox="0 0 24 24" name="logo-linkedin"></ion-icon>
+							Linkedin
+						</a>
+						<a href="https://www.instagram.com/tilburgquoc/" class="flex items-center text-darkMint dark:text-mintCream hover:text-darkMint hover:bg-accent rounded p-2">
+							<ion-icon fill="currentColor" class="w-6 h-6 m-2" viewBox="0 0 24 24" name="logo-instagram"></ion-icon>
+							Instagram
+							
+						</a>
+					</div>
+				</div>
+				<form action="https://getform.io/f/pbnvvwyb" method="POST" class="space-y-8">
+					<input class="transition-colors duration-500 block p-3 w-full text-sm text-mintCream bg-darkMint rounded-lg border border-accent shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-darkMint dark:border-mintCream dark:placeholder-mintCream dark:text-mintCream dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" 
+					type="text" name="name" placeholder="Your Name">
+					<input class="transition-colors duration-500 shadow-sm bg-darkMint border border-accent text-mintCream text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-darkMint dark:border-acc dark:placeholder-mintCream dark:text-mintCream dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" 
+					type="email" name="email" placeholder="Your email">
+					<textarea class="transition-colors duration-500 block p-2.5 w-full text-sm text-darkMint bg-mintCream rounded-lg shadow-sm border border-accent focus:ring-primary-500 focus:border-primary-500 dark:bg-darkMint dark:border-green-800 dark:placeholder-mintCream dark:text-mintCream dark:focus:ring-primary-500 dark:focus:border-primary-500 sm:col-span-2" type="text" name="message" placeholder="Hello there!" rows="4"></textarea>
+					<button class="transition-colors duration-500 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-darkMint rounded-lg group bg-gradient-to-br dark:from-green-400 dark:to-darkMint dark:group-hover:from-green-400 dark:group-hover:to-darkMint dark:hover:text- dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800" 
+					type="submit">
+						<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-mintCream dark:bg-darkMint rounded-md group-hover:bg-opacity-0">
+							Say Hello!
+						</span>
+					</button>
+				</form>
+			</div>
+		</div>
+		<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>   
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<script src="./js/main.js"></script>
+		<script>
+			document.addEventListener('alpine:init', () => {
+				Alpine.data('skillDisplay', () => ({
+					skills: [{
+							'title': 'HTML + CSS',
+							'percent': '75',
+						},
+						{
+							'title': 'Java',
+							'percent': '75',
+						},
+						{
+							'title': 'Python',
+							'percent': '75',
+						},
+						{
+							'title': 'JavaScript',
+							'percent': '70',
+						},
+						{
+							'title': 'SQL',
+							'percent': '80',
+						}, {
+							'title': 'C',
+							'percent': '65',
+						},
+					],
+					currentSkill: {
+						'title': 'HTML + CSS',
+						'percent': '75',
+					}
+				}));
+			});
+		</script>
+		<script>
+			function calculateAge() {
+				const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
+				const birthTime = new Date('2004-12-07T00:00:00');
+				const ageElement = document.getElementById('age');
+				
+				function updateAge() {
+					const age = ((Date.now() - birthTime) / divisor).toFixed(11);
+					ageElement.textContent = age;
+				}
+	
+				setInterval(updateAge, 25); // Update age every 25 ms
+			}
+	
+			// Wait for the DOM to fully load before running the script
+			document.addEventListener('DOMContentLoaded', calculateAge);
+		</script>
+	</body>
+</html>
